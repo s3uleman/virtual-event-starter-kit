@@ -18,7 +18,7 @@ import { Job, Sponsor, Stage, Speaker } from '@lib/types';
 const API_URL = `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}`;
 const API_TOKEN = process.env.CONTENTFUL_ACCESS_TOKEN;
 
-async function fetchCmsAPI(query: string) {
+async function fetchCmsAPI(query: string) { 
   const res = await fetch(API_URL, {
     method: 'POST',
     headers: {
